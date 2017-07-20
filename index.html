@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style type="text/css">
+  
+  body {
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 80px;
+  padding-bottom: 40px;
+  }
+  #contenedor{
+    border: 5px;
+  }
+  </style>
+  <center>
+<body>
+<table border="1">
+    <tr>
+      <td>4</td>
+      <td>8</td>
+      <td>12</td>
+      <td>16</td>
+      <td>20</td>
+      <td>24</td>
+      <td>28</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>7</td>
+      <td>11</td>
+      <td>15</td>
+      <td>19</td>
+      <td>23</td>
+      <td>27</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>6</td>
+      <td>10</td>
+      <td>14</td>
+      <td>18</td>
+      <td>22</td>
+      <td>26</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>5</td>
+      <td>9</td>
+      <td>13</td>
+      <td>17</td>
+      <td>21</td>
+      <td>25</td>
+      <td>29</td>
+    </tr>
+</table><br>
+    
+<div id="contenedor1">
+
+    <input type="text" id="dni1" placeholder="DNI" required>
+    <button type="button" onclick="convert()">Buscar</button>
+    <p>N° de asiento:<div  id="mostrar"></div></p>
+    <p><input type="text" id="nombre" placeholder="Nombre" required></p>
+    <p><input type="text" id="apellido" placeholder="Apellidos" required></p>
+    <p><input type="text" id="dni" placeholder="DNI" required></p>
+    <button type="button" onclick="reservarAsintos()">Reservar</button>
+    <button type="button" onclick="convert()">Cancelar</button>
+</div><br>
+<div id="contenedor2">
+    <button  type="submit" id="mostrar" onclick="show()">Mostrar</button>
+</div>
+<script src="js.js"></script>
+</body>
+</center>
+</html>
