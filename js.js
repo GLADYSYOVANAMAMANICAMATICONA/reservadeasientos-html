@@ -16,6 +16,9 @@ function reservarAsintos(){
 
 console.log(n)
 }
+function cancelar(){
+   
+}
 
 function Mostrar(){
 	var resultado ="";
@@ -25,3 +28,4 @@ function Mostrar(){
     resultado += "<p>Dni:+ dni + </p>";
      return resultado;
 }
+

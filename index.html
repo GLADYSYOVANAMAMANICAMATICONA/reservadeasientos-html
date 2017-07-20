@@ -64,13 +64,13 @@
 <div id="contenedor1">
 
     <input type="text" id="dni1" placeholder="DNI" required>
-    <button type="button" onclick="convert()">Buscar</button>
+    <button id="buscardni" type="button" onclick="buscar()">Buscar</button>
     <p>N° de asiento:<div  id="mostrar"></div></p>
     <p><input type="text" id="nombre" placeholder="Nombre" required></p>
     <p><input type="text" id="apellido" placeholder="Apellidos" required></p>
     <p><input type="text" id="dni" placeholder="DNI" required></p>
     <button type="button" onclick="reservarAsintos()">Reservar</button>
-    <button type="button" onclick="convert()">Cancelar</button>
+    <button id="cancelar" type="button" onclick="cancelar()">Cancelar</button>
 </div><br>
 <div id="contenedor2">
     <button  type="submit" id="mostrar" onclick="show()">Mostrar</button>
