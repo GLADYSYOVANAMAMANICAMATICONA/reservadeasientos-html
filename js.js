@@ -4,7 +4,8 @@ for (var i = 0; i < celdas.length; i++) {
 }
 function redirect(event){
     document.getElementById("mostrar").innerHTML=(event.target.textContent);
-    event.target.style.backgroundColor="red";
+    //event.target.style.backgroundColor="red";
+    pintar=event.target;
 
 }
 
@@ -16,6 +17,8 @@ function Pasajero(n,nombre,apellido,dni){
 	this.apellidop=apellido,
 	this.dnip=dni
 }
+
+var pintar;
 function reservarAsientos(){
 	var n=document.getElementById("mostrar").textContent;
 	console.log(n);
@@ -27,8 +30,13 @@ function reservarAsientos(){
 console.log(n)*/
     var reservadeasiento = new Pasajero(n, nombre, apellido, dni);
     arrayDeAsientos.push(reservadeasiento);
+     pintar.style.backgroundColor="blue";
     console.log(arrayDeAsientos)
+
+
+
 }
+
 
 function cancelar(){
 
