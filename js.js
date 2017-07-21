@@ -4,7 +4,6 @@ for (var i = 0; i < celdas.length; i++) {
 }
 function redirect(event){
     document.getElementById("mostrar").innerHTML=(event.target.textContent);
-    //event.target.style.backgroundColor="red";
     pintar=event.target;
 
 }
