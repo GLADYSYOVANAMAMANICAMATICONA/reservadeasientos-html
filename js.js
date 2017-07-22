@@ -24,14 +24,11 @@ function reservarAsientos(){
 	var nombre=document.getElementById("nombre").value;
 	var apellido=document.getElementById("apellido").value;
 	var dni=document.getElementById("dni").value;
-	/*var guardar=document.getElementById("lista");
-	guardar.innerHTML+= "<center><div><h3>ASIENTOS RESERVADOS</h3><p>N° de asiento:"+n+"</p><p>Nombre: "+nombre+"</p></div><p>Apellido :"+apellido+"</p><p>Dni :"+dni+"</p></center>";
-console.log(n)*/
-    var reservadeasiento = new Pasajero(n, nombre, apellido, dni);
+	var reservadeasiento = new Pasajero(n, nombre, apellido, dni);
     arrayDeAsientos.push(reservadeasiento);
      pintar.style.backgroundColor="blue";
     console.log(arrayDeAsientos)
-
+borrar()
 
 
 }
