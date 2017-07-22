@@ -28,7 +28,7 @@ function reservarAsientos(){
     arrayDeAsientos.push(reservadeasiento);
      pintar.style.backgroundColor="blue";
     console.log(arrayDeAsientos)
-borrar()
+limpiar()
 
 
 }
@@ -59,7 +59,7 @@ function buscar() {
   }
 
 }
-function borrar(){
+function limpiar(){
   document.getElementById("mostrar").value="";
   document.getElementById("nombre").value="";
   document.getElementById("apellido").value="";
