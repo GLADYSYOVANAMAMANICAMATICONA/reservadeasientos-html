@@ -48,7 +48,6 @@ function listar(){
 				+arrayDeAsientos[i].apellidop+"<br>"
 				+arrayDeAsientos[i].dnip+"<br>";
 	}
-	//document.getElementById(listartodo).value;
 document.getElementById("listar").innerHTML=listartodo;
 }
 
@@ -63,4 +62,9 @@ function buscar() {
   }
 
 }
-
+function borrar(){
+  document.getElementById("mostrar").value="";
+  document.getElementById("nombre").value="";
+  document.getElementById("apellido").value="";
+ document.getElementById("dni").value="";
+}
