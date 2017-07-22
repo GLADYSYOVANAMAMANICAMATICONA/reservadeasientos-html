@@ -41,7 +41,7 @@ function listar(){
 	var listartodo = "";
 		for (var i = 0; i<arrayDeAsientos.length;i++) {
 		listartodo+=arrayDeAsientos[i].ndeasiento+"<br>" 
-				+arrayDeAsientos[i].nombrep+"<br>"
+				"N° "+arrayDeAsientos[i].nombrep+"<br>"
 				+arrayDeAsientos[i].apellidop+"<br>"
 				+arrayDeAsientos[i].dnip+"<br>";
 	}
