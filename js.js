@@ -10,16 +10,14 @@ function redirect(event){
 
 var arrayDeAsientos = []
 //var records = document.getElementById('lista');
-//plantilla para construir 
 function Pasajero(n,nombre,apellido,dni){
 	this.ndeasiento = n,
 	this.nombrep = nombre,
 	this.apellidop = apellido,
 	this.dnip = dni
 };
-var pintar;
 
-//funcion que recive los valores ingresados por el imput y agregados en el array
+var pintar;
 function reservarAsientos(){
 	var n=document.getElementById("mostrar").textContent;
 	console.log(n);
@@ -27,8 +25,8 @@ function reservarAsientos(){
 	var apellido=document.getElementById("apellido").value;
 	var dni=document.getElementById("dni").value;
 	var reservadeasiento = new Pasajero(n, nombre, apellido, dni);
-    arrayDeAsientos.push(reservadeasiento);// push para agregar al arrray
-    pintar.style.backgroundColor="blue";
+    arrayDeAsientos.push(reservadeasiento);
+     pintar.style.backgroundColor="blue";
     console.log(arrayDeAsientos)
 limpiar()
 
@@ -42,7 +40,7 @@ function cancelar(){
 function listar(){
 	var listartodo = "";
 	for (var i = 0; i<arrayDeAsientos.length; i++) {
-		listartodo+=arrayDeAsientos[i].ndeasiento+"  Nombre: "+ 
+		listartodo+=arrayDeAsientos[i].ndeasiento+"  Nombre: "+
 		arrayDeAsientos[i].nombrep+" Apellido: "+
 		arrayDeAsientos[i].apellidop+" DNI: "+
 		arrayDeAsientos[i].dnip+"<br>";
@@ -57,11 +55,10 @@ document.getElementById("lista").innerHTML=listartodo;
 
 
 function buscar() {
-for (var i = 0; i <= arrayDeAsientos.length; i++) {
-	var
 
-	
-}
+  if (dni==buscardni) {
+
+  }
 
 }
 function limpiar(){
@@ -70,3 +67,4 @@ function limpiar(){
   document.getElementById("apellido").value="";
  document.getElementById("dni").value="";
 }
+
