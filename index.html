@@ -5,7 +5,7 @@
   <title>Document</title>
 </head>
 <style type="text/css">
-  
+
   body {
   padding-top: 40px;
   padding-right: 40px;
@@ -60,21 +60,23 @@
       <td>29</td>
     </tr>
 </table><br>
-    
+
 <div id="contenedor1">
 
     <input type="text" id="dni1" placeholder="DNI" required>
-    <button id="buscardni" type="button" onclick="buscar()">Buscar</button>
+    <button id="btnBuscarDni" type="button" onclick="buscarDni();">Buscar</button>
     <p>N° de asiento:<div  id="mostrar"></div></p>
     <p><input type="text" id="nombre" placeholder="Nombre" required></p>
     <p><input type="text" id="apellido" placeholder="Apellidos" required></p>
     <p><input type="text" id="dni" placeholder="DNI" required></p>
-    <button id="mostrar" type="button" onclick="reservarAsientos()">Reservar</button>
-    <button id="cancelar" type="button" onclick="cancelar()">Cancelar</button>
+    <button id="mostrar" type="button" onclick="reservarAsientos();">Reservar</button>
+    <button id="cancelar" type="button" onclick="cancelar();">Cancelar</button>
     <button  type="button" onclick="listar()">Listar</button>
 </div><br>
-<div id="lista"><p>Lista de Pasajeros</p></div>
+<p>Lista de Pasajeros</p>
+<div id="lista"></div>
 <script src="js.js"></script>
 </body>
 </center>
 </html>
+
